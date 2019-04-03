@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "2038f6093048a40a9227",
-    "url": "/React_Clicky_App/static/css/main.c67dcb14.chunk.css"
+    "revision": "4de02713391ea402806d",
+    "url": "/React_Clicky_App/static/css/main.b6ece189.chunk.css"
   },
   {
-    "revision": "2038f6093048a40a9227",
-    "url": "/React_Clicky_App/static/js/main.5aa74ee9.chunk.js"
+    "revision": "4de02713391ea402806d",
+    "url": "/React_Clicky_App/static/js/main.5bae0f88.chunk.js"
   },
   {
     "revision": "66f7ef539241dbf59549",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/React_Clicky_App/static/js/2.884c28c3.chunk.js"
   },
   {
-    "revision": "3f2b33b6210ebb524f0e421eb2bbdbe8",
+    "revision": "1853c8f676d1936731636420689bf5ce",
     "url": "/React_Clicky_App/index.html"
   }
 ];
