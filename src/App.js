@@ -4,14 +4,15 @@ import Card from "./components/Card";
 import Header from "./components/Header";
 import cards from "./cards.json";
 import './App.css';
-import './bootstrap.min.css';
+// import './bootstrap.min.css';
 
 class App extends Component {
   // Setting this.state.cards to the cards json array
   state = {
     cards,
     score: 0,
-    highscore: 0
+    highscore: 0,
+    message: "Click an image to begin!"
   };
 
   gameOver = () => {
@@ -24,7 +25,7 @@ class App extends Component {
       newCard.count = 0;
       console.log(newCard);
     });
-    alert(`Game Over :( \nscore: ${this.state.score}`);
+    this.setState({message:`You Guessed Wrong!`});
     this.setState({score: 0});
     return true;
   }
@@ -35,6 +36,7 @@ class App extends Component {
         if(cards[i].count === 0){
           cards[i].count = cards[i].count + 1;
           this.setState({score : this.state.score + 1}, function(){
+            this.setState({message:`You Guessed right!`});
             console.log(this.state.score);
           });
           this.state.cards.sort(() => Math.random() - 0.5)
@@ -51,7 +53,7 @@ class App extends Component {
 
     return (
       <div>
-        <Header score={this.state.score} highscore={this.state.highscore}>Clicky Game</Header>
+        <Header message={this.state.message} score={this.state.score} highscore={this.state.highscore}></Header>
         {this.state.cards.map(card => (
           <Card
             clickCount={this.clickCount}

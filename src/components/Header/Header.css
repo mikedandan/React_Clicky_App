@@ -12,6 +12,44 @@
   .scores {
     float: right;
   }
-  .row {
+  /* .row {
       background-color: red;
-  }
+  } */
+  .navbar {
+    background: #2226fc;
+    min-height: 70px;
+    /* position: fixed; */
+    width: 100%;
+    -webkit-box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+    box-shadow: 0 14px 28px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.22);
+    color: #fff;
+    font-size: calc(10px + 14 * (100vw - 320px)/ 800);
+    z-index: 99;
+    white-space: nowrap;
+}
+  .navbar .title .message .score{
+    display: inline-block;
+    padding: 26px 0;
+    width: 33.3%;
+    text-align: center;
+}
+/* .navbar .score{
+  display: inline-block;
+  padding: 26px 0;
+  width: 33.3%;
+  position: relative;
+} */
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 900;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+}
+#root, #root>div, body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
